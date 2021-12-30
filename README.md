@@ -21,9 +21,9 @@ khai bao số lần bạn muốn crawl
 khai báo vị trí các element bạn cần crawl về
 ```
 ## bài viết sẽ hd crawl trong các trang đơn giản mà bạn thường thấy
-- youtube
-- facebook và twister
 - web thường
+- facebook/twister(#youtube là trường hợp đặc biệt loại này)
+- loại nhiều url
 ## let's go
 ### tool selenium crawl này có gì để giúp bạn duyệt trang web ?
 - các thứ bạn thường sử dụng khi bạn làm trên web bao gồm click,điền vào vị trí nào đó sau đó enter,cuộn thanh cuốn trang web
