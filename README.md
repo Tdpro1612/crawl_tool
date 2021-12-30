@@ -13,3 +13,26 @@ kết quả sổ xố
 ```
 ![new2](https://user-images.githubusercontent.com/61773507/147718755-e19300db-28c4-40cc-a010-990de6405f33.jpg)
 ## tool này có gì
+- hướng dẫn bạn crawl các trang web,sắp xếp dữ liệu theo cách bạn cần bằng phần mềm selenium phiên bản 3.
+- điều bạn cần làm là khai báo
+```
+khai báo url
+khai bao số lần bạn muốn crawl
+khai báo vị trí các element bạn cần crawl về
+```
+## bài viết sẽ hd crawl trong các trang đơn giản mà bạn thường thấy
+- youtube
+- facebook và twister
+- web thường
+## let's go
+### tool selenium crawl này có gì để giúp bạn duyệt trang web ?
+- các thứ bạn thường sử dụng khi bạn làm trên web bao gồm click,điền vào vị trí nào đó sau đó enter,cuộn thanh cuốn trang web
+```
+click : khi bạn bấm vào 1 link nào đó hoặc 1 tab nào đó trên url web chính
+điền vị trí : ví dụ như login,điền ngày tháng,điền từ cần tìm kiếm
+cuộn thanh cuốn trang web như: load xuống dưới cùng của các trang youtube hay twister hay là load các comment
+```
+### vì lý do phức tạp nên mình chia loại crawl ra để mọi người điền cho dễ nhé
+loại 1 : url thẳng : 1 cái vào là lấy data ngay không cần cuộn này nọ.web này là web thẳng
+loại 2 : url vào login để crawl cần click hoặc scroll nhẹ
+loại 3 : nhiều url nhập từ bên ngoài
