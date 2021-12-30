@@ -6,13 +6,10 @@
 ```
 ví dụ :
 danh sách các loại động vật
-
-![new](https://user-images.githubusercontent.com/61773507/147718604-e0cc6c30-643a-49cc-8767-d9c375ea3fc4.jpg)
-
-kết quả sổ xố 
-
-![new2](https://user-images.githubusercontent.com/61773507/147718755-e19300db-28c4-40cc-a010-990de6405f33.jpg)
-
-## tool này có gì
-
 ```
+![new](https://user-images.githubusercontent.com/61773507/147718604-e0cc6c30-643a-49cc-8767-d9c375ea3fc4.jpg)
+```
+kết quả sổ xố 
+```
+![new2](https://user-images.githubusercontent.com/61773507/147718755-e19300db-28c4-40cc-a010-990de6405f33.jpg)
+## tool này có gì
