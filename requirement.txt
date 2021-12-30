@@ -1,0 +1,4 @@
+selenium==3.141.0
+jsbeautifier==1.11.0
+jsons
+PyYAML
