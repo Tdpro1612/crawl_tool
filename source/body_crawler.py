@@ -11,7 +11,7 @@ def Extensions(display=False):
         chrome_options.add_argument('disable_infobars') #hide the line Chrome is being controlled by automated software
     return chrome_options
 
-def create_broswer(executable_path: Text,chrome_options):
+def create_browser(executable_path: Text,chrome_options):
     """
     create the variable browser to do,
     executable_path nơi chứa file chrome drive đúng với version của chrome tải về tại đây https://sites.google.com/a/chromium.org/chromedriver/downloads
@@ -89,7 +89,7 @@ def Close_web(browser):
 
 # if __name__=="__main__":
 #     a=Extensions()
-#     b=create_broswer('chromdrive/chromedriver',a)
+#     b=create_browser('chromdrive/chromedriver',a)
 #     c=Open_web(b,"https://www.vncreatures.net/kqtracuu.php?page=25&type=nhom&loai=1&")
 #     e=Find_class(b,"aLink02",True)
 #     for i in e:
