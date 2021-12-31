@@ -12,6 +12,6 @@ LOOP:
   - xpath_identify: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/font/p[5]"
   - xpath_click: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[7]/td/input"
 SAVE:
-  param : default
   name: animal
+  param : default
   type: csv
