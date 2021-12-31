@@ -33,9 +33,9 @@ click : khi bạn bấm vào 1 link nào đó hoặc 1 tab nào đó trên url w
 cuộn thanh cuốn trang web như: load xuống dưới cùng của các trang youtube hay twister hay là load các comment
 ```
 ### vì lý do phức tạp nên mình chia loại crawl ra để mọi người điền cho dễ nhé
-loại 1 : url thẳng : 1 cái vào là lấy data ngay không cần cuộn này nọ.web này là web thẳng
-loại 2 : url vào login để crawl cần click hoặc scroll nhẹ
-loại 3 : nhiều url nhập từ bên ngoài
+- loại 1 : url thẳng : 1 cái vào là lấy data ngay không cần cuộn này nọ.web này là web thẳng
+- loại 2 : url vào login để crawl cần click hoặc scroll nhẹ
+- loại 3 : nhiều url nhập từ bên ngoài
 
 
 ```
