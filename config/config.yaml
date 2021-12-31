@@ -5,12 +5,11 @@ HARD:
 LOOP:
   - number: "45"
   - start: "2"
-  - xpath_click: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[{start}]/td[2]/p/a"
-  - animal:
-    xpath_name: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/font/p[1]/span/span"
-    xpath_image: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[2]/td[1]/table/tbody/tr[1]/td[1]/a/img"
-    type_image: "src"
-    xpath_identify: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/font/p[5]"
+  - xpath_click: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[start]/td[2]/p/a"
+  - xpath_name: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/font/p[1]/span/span"
+  - xpath_image: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[2]/td[1]/table/tbody/tr[1]/td[1]/a/img"
+  - type_image: "src"
+  - xpath_identify: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/font/p[5]"
   - xpath_click: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[7]/td/input"
 SAVE:
   param : default
