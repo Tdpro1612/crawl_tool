@@ -37,7 +37,6 @@ cuộn thanh cuốn trang web như: load xuống dưới cùng của các trang 
 - loại 2 : url vào login để crawl cần click hoặc scroll nhẹ
 - loại 3 : nhiều url nhập từ bên ngoài
 
-
 ```
 form run
 version 1 : 1 loop
