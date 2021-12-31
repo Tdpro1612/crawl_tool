@@ -1,0 +1,12 @@
+HARD:
+  url: "https://www.vncreatures.net/kqtracuu.php?page=25&type=nhom&loai=1&"
+  extension : Fasle
+LOOP:
+  - number: "45"
+  - start: "2"
+  - xpath_name : "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[start]/td[2]/p/a"
+    type: 'text'
+SAVE:
+  name: animal
+  param : default
+  type: excel
