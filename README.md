@@ -7,8 +7,7 @@
 ví dụ :
 crawl truyện siêu cấp hoàng kim thủ
 ```
-![anh](https://user-images.githubusercontent.com/61773507/149074610-0c8e5fc7-5b95-4c51-b6e4-7cee007e2f3a.jpg)
-
+![anh](https://user-images.githubusercontent.com/61773507/149074242-864de04d-af5e-41cb-af59-b7e30ff01864.jpg)
 ```
 kết quả sổ xố 
 ```
