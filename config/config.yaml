@@ -1,17 +1,12 @@
 HARD:
-  url: "https://www.vncreatures.net/kqtracuu.php?page=25&type=nhom&loai=1&"
-  extension: False
-
+  - url: "https://wikinam.net/truyen/sieu-cap-hoang-kim-chi/chuong-1-ngheo-tung-dai-thieu-bi-nguoi-k-WSaLmIDbSVx~v5pR"
+  - extension: False
+  - number: 5
+  - extension: False
 LOOP:
-  - number: "45"
-  - start: "2"
-  - xpath_click: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[2]/tbody/tr[start]/td[2]/p/a"
-  - xpath_name: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/font/p[1]/span/span"
-  - xpath_image: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[2]/td[1]/table/tbody/tr[1]/td[1]/a/img"
-  - type_image: "src"
-  - xpath_identify: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[5]/td/table/tbody/tr/td[2]/font/p[5]"
-  - xpath_click: "/html/body/table[3]/tbody/tr[1]/td[2]/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table[1]/tbody/tr[7]/td/input"
+  - xpath_name: "//*[@class='book-title'][2]"
+  - xpath_content: "//*[@id='bookContentBody']"
+  - xpath_click: "//*[@style='margin-left: 0.3rem; display: inline-block; margin-right: 1rem']"
 SAVE:
-  name: animal
-  param : default
-  type: csv
+  - name: superhand
+  - type: xlsx
