@@ -5,9 +5,10 @@
 - còn đối với tôi nó là 1 công cụ giúp tôi lấy dữ liệu về máy tính thông qua phương thức lặp đi lặp lại 1 công việc đó là xác định vị trí element sau đó lấy nội dung của element về máy và sắp xếp theo 1 danh sách mà tôi cần 
 ```
 ví dụ :
-danh sách các loại động vật
+crawl truyện siêu cấp hoàng kim thủ
 ```
-![new](https://user-images.githubusercontent.com/61773507/147718604-e0cc6c30-643a-49cc-8767-d9c375ea3fc4.jpg)
+![anh](https://user-images.githubusercontent.com/61773507/149074242-864de04d-af5e-41cb-af59-b7e30ff01864.jpg)
+
 ```
 kết quả sổ xố 
 ```
