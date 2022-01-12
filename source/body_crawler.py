@@ -12,31 +12,33 @@ def Extensions(display=False):
     return chrome_options
 
 def create_browser(executable_path: Text,chrome_options):
+    executable_path="chromdrive\chromedriver.exe"
     """
     create the variable browser to do,
     executable_path nơi chứa file chrome drive đúng với version của chrome tải về tại đây https://sites.google.com/a/chromium.org/chromedriver/downloads
     """
+
     browser = webdriver.Chrome(executable_path,chrome_options=chrome_options)  
 
     return browser
 
 def Open_web(browser,url):
     browser.get(url)   #open website
-    time.sleep(5)      #stop time website to website load all ,you can fix number of second
+    time.sleep(10)      #stop time website to website load all ,you can fix number of second
 
-def Find_id(browser,id,many=False):
-    """
-    browser : variable to do
-    xpath : xpath to find the element in website
-    many : quantity the element to craw
-    """
-    if many is True:
-        variable=browser.find_elements_by_id(id)
-    else:
-        variable=browser.find_element_by_idh(id)
-    return variable
+# def Find_id(browser,id,many=False):
+#     """
+#     browser : variable to do
+#     xpath : xpath to find the element in website
+#     many : quantity the element to craw
+#     """
+#     if many is True:
+#         variable=browser.find_elements_by_id(id)
+#     else:
+#         variable=browser.find_element_by_idh(id)
+#     return variable
 
-def Find_xpath(browser,xpath,many=False):
+def Find_xpath(browser,xpath,many=False,*arg):
     """
     browser : variable to do
     xpath : xpath to find the element in website
@@ -48,17 +50,17 @@ def Find_xpath(browser,xpath,many=False):
         variable=browser.find_element_by_xpath(xpath)
     return variable
 
-def Find_class(browser,classname,many=False):
-    """
-    browser : variable to do
-    classname : name to find the element in website
-    many : quantity the element to craw
-    """
-    if many is True:
-        variable=browser.find_elements_by_class_name(classname)
-    else:
-        variable=browser.find_element_by_class_name(classname)
-    return variable
+# def Find_class(browser,classname,many=False):
+#     """
+#     browser : variable to do
+#     classname : name to find the element in website
+#     many : quantity the element to craw
+#     """
+#     if many is True:
+#         variable=browser.find_elements_by_class_name(classname)
+#     else:
+#         variable=browser.find_element_by_class_name(classname)
+#     return variable
 
 def Click_button(variable):
     """
@@ -85,6 +87,7 @@ def login(variable_user,user: Text,variable_password,password: Text):
 
 def Close_web(browser):
     browser.close()
+    pass
 
 
 # if __name__=="__main__":

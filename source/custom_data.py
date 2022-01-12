@@ -1,7 +1,7 @@
 from source.body_crawler import *
 
 def get_data(variable,many=False,type=None):
-    data=""
+    data=[]
     if type is None:
         if many is True:
             for i in variable:
