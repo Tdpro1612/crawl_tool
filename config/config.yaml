@@ -2,7 +2,6 @@ HARD:
   - url: "https://wikinam.net/truyen/sieu-cap-hoang-kim-chi/chuong-1-ngheo-tung-dai-thieu-bi-nguoi-k-WSaLmIDbSVx~v5pR"
   - extension: False
   - number: 5
-  - extension: False
 LOOP:
   - xpath_name: "//*[@class='book-title'][2]"
   - xpath_content: "//*[@id='bookContentBody']"
