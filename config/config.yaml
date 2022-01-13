@@ -1,7 +1,7 @@
 HARD:
   - url: "https://wikinam.net/truyen/sieu-cap-hoang-kim-chi/chuong-1-ngheo-tung-dai-thieu-bi-nguoi-k-WSaLmIDbSVx~v5pR"
   - extension: False
-  - number: 5
+  - number: 3
 LOOP:
   - xpath_name: "//*[@class='book-title'][2]"
   - xpath_content: "//*[@id='bookContentBody']"
@@ -9,3 +9,14 @@ LOOP:
 SAVE:
   - name: superhand
   - type: xlsx
+# HARD:
+#   - url: "https://www.youtube.com/watch?v=Px048krmhMo&t=98s"
+#   - extension: False
+#   - scroll: "ytb"
+# # //*[@class='style-scope ytd-comment-renderer']
+# LOOP:
+#   - xpaths_name: "//*[@id='header-author']/h3/a/span"
+#   - xpaths_comment: "//*[@id='content-text']"
+# SAVE:
+#   - name: blink
+#   - type: xlsx

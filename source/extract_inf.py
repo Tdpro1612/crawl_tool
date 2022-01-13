@@ -14,11 +14,11 @@ def load_configure(path):
     return data
 # hàm rút ra extension
 def extract_extension(data):
-    extension=Extensions()
+    display=False
     for i in range(len(data['HARD'])):
         if data['HARD'][i].get('extension',None) != None:
-            extension = data['HARD'][i]['extension']
-    return extension
+            display = data['HARD'][i]['extension']
+    return display
 # ham lay url
 def track_url(data):
     url=None
@@ -125,3 +125,75 @@ def Load_data(start,number,browser,data,data_save):
                         cache_dict[action]=var
         data_save.append(cache_dict)
     return data_save
+# ham load data ytb
+def load_data_ytb(start,number,browser,data,data_save,columns):
+    cache_list=[]
+    for i in range(len(data['LOOP'])):
+        variable=data['LOOP'][i]
+        for value in variable.values():
+            value = value
+        for key in variable.keys():    
+            track_xpath_value = track_xpath(key)
+            kind_of_find,action,type_xpath=track_inf_xpath(track_xpath_value)
+            if action == 'click':
+                results=Find_xpath(browser,value)
+                Click_button(results)
+            else:
+                if kind_of_find=='xpaths':
+                    results=Find_xpath(browser,value,True)
+                    var=get_data(results,True,type=type_xpath)
+                    cache_list.append(var)
+
+    for i in range(start,number):
+        cache_dict={}
+        for j in range(len(columns)):
+            action=columns[j]
+            cache_dict[action]=cache_list[j][i]
+        data_save.append(cache_dict)
+    return data_save
+
+# ham load scroll
+def track_scroll(data):
+    scroll=None
+    for i in range(len(data['HARD'])):
+        if data['HARD'][i].get('scroll',None) != None:
+            scroll = data['HARD'][i]['scroll']
+    return scroll
+def scroll_page(browser,scroll):
+    # ytb = "document.documentElement.scrollHeight"
+    # jav_scrip_tw_fb = "document.body.scrollHeight"
+    if scroll == 'ytb':
+        pause = 3
+        lastHeight = browser.execute_script("return document.documentElement.scrollHeight")
+        i = 0
+        browser.get_screenshot_as_file("logs/image/test01_1_"+str(i)+".png")
+        while True:
+            try:
+                browser.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
+                time.sleep(pause)
+                newHeight = browser.execute_script("return document.documentElement.scrollHeight")
+                if newHeight == lastHeight:
+                    break
+                lastHeight = newHeight
+            except:
+                break
+            i += 1
+            browser.get_screenshot_as_file("logs/image/test01_1_"+str(i)+".png")
+    else:
+        pause = 3
+        lastHeight = browser.execute_script("return document.body.scrollHeight")
+        i = 0
+        browser.get_screenshot_as_file("logs/image/test01_1_"+str(i)+".png")
+        while True:
+            try:
+                browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(pause)
+                newHeight = browser.execute_script("return document.body.scrollHeight")
+                if newHeight == lastHeight:
+                    break
+                lastHeight = newHeight
+            except:
+                break
+            i += 1
+            browser.get_screenshot_as_file("logs/image/test01_1_"+str(i)+".png")
+    return scroll

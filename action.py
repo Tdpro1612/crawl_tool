@@ -7,12 +7,17 @@ path = "config/config.yaml"
 data=load_configure(path)
 data_save=[]
 columns=create_columns(data['LOOP'])
+display=extract_extension(data)
+extension=Extensions(display)
 
-extension=extract_extension(data)
 browser=create_browser("chromdrive\chromedriver.exe",chrome_options=extension)
 url = track_url(data)
 open_website=Open_web(browser,url)
-
+scroll=track_scroll(data)
+if scroll != None:
+    scroll=scroll_page(browser,scroll)
+else:
+    None
 start,number=track_start(data),track_number(data)
 
 if number==0:
@@ -21,15 +26,14 @@ if number==0:
         value = value
     results=Find_xpath(browser,value,True)
     number=len(results)
-    print(number)
-    data_save=Load_data(start,number,browser,data,data_save)
+    data_save=load_data_ytb(start,number,browser,data,data_save,columns)
+    
         
 else:
     data_save=Load_data(start,number,browser,data,data_save)
 
         
 close_website=Close_web(browser)
-columns=create_columns(data['LOOP'])
 type_save,path_save=track_save(data)
 if type_save == 'xlsx':
     write_excel(path_save,data_save,columns=columns)
