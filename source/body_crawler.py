@@ -24,7 +24,8 @@ def create_browser(executable_path: Text,chrome_options):
 
 def Open_web(browser,url):
     browser.get(url)   #open website
-    time.sleep(10)      #stop time website to website load all ,you can fix number of second
+    pause = 3
+    # time.sleep(20)      #stop time website to website load all ,you can fix number of second
 
 # def Find_id(browser,id,many=False):
 #     """
