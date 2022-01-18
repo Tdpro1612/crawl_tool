@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import time
 from typing import *
+from signal import pause
 
 def Extensions(display=False):
     chrome_options = Options()
@@ -12,7 +13,7 @@ def Extensions(display=False):
     return chrome_options
 
 def create_browser(executable_path: Text,chrome_options):
-    executable_path="chromdrive\chromedriver.exe"
+    executable_path="chromdrive/chromedriver"
     """
     create the variable browser to do,
     executable_path nơi chứa file chrome drive đúng với version của chrome tải về tại đây https://sites.google.com/a/chromium.org/chromedriver/downloads
@@ -25,7 +26,7 @@ def create_browser(executable_path: Text,chrome_options):
 def Open_web(browser,url):
     browser.get(url)   #open website
     pause = 3
-    # time.sleep(20)      #stop time website to website load all ,you can fix number of second
+    time.sleep(5)      #stop time website to website load all ,you can fix number of second
 
 # def Find_id(browser,id,many=False):
 #     """
@@ -63,12 +64,13 @@ def Find_xpath(browser,xpath,many=False,*arg):
 #         variable=browser.find_element_by_class_name(classname)
 #     return variable
 
-def Click_button(variable):
+def Click_button(browser,variable):
     """
     variable : where to click
     """
-    variable.click()
-
+    browser.execute_script("arguments[0].click();", variable)
+    
+    time.sleep(1)
 def Fill_blank(variable,value: Text):
     """
     variable : where to fill value 
@@ -89,13 +91,3 @@ def login(variable_user,user: Text,variable_password,password: Text):
 def Close_web(browser):
     browser.close()
     pass
-
-
-# if __name__=="__main__":
-#     a=Extensions()
-#     b=create_browser('chromdrive/chromedriver',a)
-#     c=Open_web(b,"https://www.vncreatures.net/kqtracuu.php?page=25&type=nhom&loai=1&")
-#     e=Find_class(b,"aLink02",True)
-#     for i in e:
-#         print(i.text)
-#     d=Close_web(b)

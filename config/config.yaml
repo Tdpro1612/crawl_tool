@@ -1,22 +1,43 @@
-HARD:
-  - url: "https://wikinam.net/truyen/sieu-cap-hoang-kim-chi/chuong-1-ngheo-tung-dai-thieu-bi-nguoi-k-WSaLmIDbSVx~v5pR"
-  - extension: False
-  - number: 3
-LOOP:
-  - xpath_name: "//*[@class='book-title'][2]"
-  - xpath_content: "//*[@id='bookContentBody']"
-  - xpath_click: "//*[@style='margin-left: 0.3rem; display: inline-block; margin-right: 1rem']"
-SAVE:
-  - name: superhand
-  - type: xlsx
+# custom: 0
+# HARD:
+#   - url: "https://wikidth.net/truyen/vu-su-trong-the-gioi-tham-tu-lung-danh/chuong-1-ta-keu-jiyo-inbun-ta-la-cai-vu--WXp1Ju8h7B7ZO5gn"
+#   - extension: True
+# LOOP:
+#   - xpath_name: "//*[@class='book-title'][2]"
+#   - xpath_content: "//*[@id='bookContentBody']"
+#   - xpath_click: "//*[@style='margin-left: 0.3rem; display: inline-block; margin-right: 1rem']"
+# SAVE:
+#   - name: Vu_sư_trong_thế_giới_Thám_Tử_Lừng_Danh
+#   - type: csv
 # HARD:
 #   - url: "https://www.youtube.com/watch?v=Px048krmhMo&t=98s"
 #   - extension: False
 #   - scroll: "ytb"
-# # //*[@class='style-scope ytd-comment-renderer']
 # LOOP:
 #   - xpaths_name: "//*[@id='header-author']/h3/a/span"
 #   - xpaths_comment: "//*[@id='content-text']"
 # SAVE:
 #   - name: blink
 #   - type: xlsx
+
+custom: 0
+HARD:
+ - url: "https://www.nhaccuatui.com/playlist/top-100-nhac-tre-hay-nhat-va.m3liaiy6vVsF.html"
+ - extension: False
+ - number: 100
+LOOP:
+ - xpath_lyric: "//*[@id='divLyric']"
+ - xpath_click: "//*[@id='nextButtonflashPlayer']"
+SAVE:
+ - name: BXH_nhac_tre_lyric
+ - type: xlsx
+# custom: 1
+# HARD:
+#  - url: "https://www.nhaccuatui.com/playlist/top-100-nhac-tre-hay-nhat-va.m3liaiy6vVsF.html"
+#  - extension: False
+# LOOP:
+#  - xpaths_sing_title: "//*[@class='item_content']/a[1]"
+#  - xpaths_link_href: "//*[@class='item_content']/a[1]"
+# SAVE:
+#  - name: BXH_nhac_tre_title
+#  - type: xlsx
