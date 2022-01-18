@@ -1,39 +1,31 @@
-# crawl_tool
+làm theo các bước sau 
+bước 1 : tạo 1 môi trường python=3.6.10
+```
+conda create -n crawl python==3.6.10
 
-## crawl data là gì?
-- định nghĩa trên mạng crawl là 1 phương tiện giúp bạn lấy dữ liệu về máy tính
-- còn đối với tôi nó là 1 công cụ giúp tôi lấy dữ liệu về máy tính thông qua phương thức lặp đi lặp lại 1 công việc đó là xác định vị trí element sau đó lấy nội dung của element về máy và sắp xếp theo 1 danh sách mà tôi cần 
+conda activate crawl
 ```
-ví dụ :
-crawl truyện siêu cấp hoàng kim thủ
-```
-![anh](https://user-images.githubusercontent.com/61773507/149074242-864de04d-af5e-41cb-af59-b7e30ff01864.jpg)
-```
-kết quả sổ xố 
-```
-![new2](https://user-images.githubusercontent.com/61773507/147718755-e19300db-28c4-40cc-a010-990de6405f33.jpg)
-## tool này có gì
-- hướng dẫn bạn crawl các trang web,sắp xếp dữ liệu theo cách bạn cần bằng phần mềm selenium phiên bản 3.
-- điều bạn cần làm là khai báo
-```
-khai báo url
-khai bao số lần bạn muốn crawl
-khai báo vị trí các element bạn cần crawl về
-```
-## bài viết sẽ hd crawl trong các trang đơn giản mà bạn thường thấy
-- web thường
-- facebook/twister(#youtube là trường hợp đặc biệt loại này)
-- loại nhiều url
-## let's go
-### tool selenium crawl này có gì để giúp bạn duyệt trang web ?
-- các thứ bạn thường sử dụng khi bạn làm trên web bao gồm click,điền vào vị trí nào đó sau đó enter,cuộn thanh cuốn trang web
-```
-click : khi bạn bấm vào 1 link nào đó hoặc 1 tab nào đó trên url web chính
-điền vị trí : ví dụ như login,điền ngày tháng,điền từ cần tìm kiếm
-cuộn thanh cuốn trang web như: load xuống dưới cùng của các trang youtube hay twister hay là load các comment
-```
-### vì lý do phức tạp nên mình chia loại crawl ra để mọi người điền cho dễ nhé
-- loại 1 : url thẳng : 1 cái vào là lấy data ngay không cần cuộn này nọ.web này là web thẳng
-- loại 2 : url vào login để crawl cần click hoặc scroll nhẹ
-- loại 3 : nhiều url nhập từ bên ngoài
 
+bước 2 install các lib
+
+```
+git clone https://github.com/Tdpro1612/crawl_tool.git
+cd craw_tool
+pip install -r requirement.txt
+```
+
+bước 3 tải phiên bản phù hợp với chrome
+lên website https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+download và bỏ vào trong thư mục chromedrive
+hd tại đây : 
+
+bước 4 chỉnh sửa file config
+
+bước 5 run 
+mở vs code hoặc terminal lên 
+cd vào thư mục craw_tool
+run lệnh 
+```
+python action.py
+```
