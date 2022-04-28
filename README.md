@@ -1,7 +1,7 @@
 làm theo các bước sau 
-bước 1 : tạo 1 môi trường python=3.6.10
+bước 1 : tạo 1 môi trường python=3.7
 ```
-conda create -n crawl python==3.6.10
+conda create -n crawl python==3.7
 
 conda activate crawl
 ```
